@@ -63,7 +63,7 @@ module.exports = function (options) {
           name: 'subject',
           message: 'Write a short, imperative tense description of the change:\n'
         }, {
-          type: 'input',
+          type: 'editor',
           name: 'body',
           message: 'Provide a longer description of the change: (press enter to skip)\n'
         }, {
@@ -72,7 +72,7 @@ module.exports = function (options) {
           message: 'Are there any breaking changes?',
           default: false
         }, {
-          type: 'input',
+          type: 'editor',
           name: 'breaking',
           message: 'Describe the breaking changes:\n',
           when: function(answers) {
